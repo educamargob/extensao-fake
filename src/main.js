@@ -6,7 +6,6 @@ function addButton(){
         url = window.location.href;
         if(menu != undefined){
             menu.appendChild(buttonNoticia);
-            console.log('borsa')
         }else{
             addButton();
         }
