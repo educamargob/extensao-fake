@@ -1,5 +1,5 @@
 'use strict'
 function analisaNoticia(url){
-        const flaskUrl = `http://a0e6-34-70-121-154.ngrok.io/${url}`
-        console.log(url);
+        const flaskUrl = `https://9749-34-70-121-154.ngrok.io//${url}`
+        fetch(flaskUrl).then(responde => console.log(responde.json()));
 }
