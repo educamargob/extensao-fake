@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Fake News Detector",
+    "version": "1.0",
+    "description": "Análisa a probabilidade da noticia ser falsa",
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    
+    "background":{
+        "scripts": ["src/background.js"],
+        "persustent": false
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "icon19.png",
+            "38": "icon38.png"
+        },
+        "default_title": "Fake news Detector",
+        "default_popup": "src/pages/index.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "src/components/buttonNoticia.js",
+                "src/services/analisaNoticia.js",
+                "src/main.js"
+                
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
