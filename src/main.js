@@ -1,4 +1,3 @@
-
 //Adicionando botão ao menu
 addButton();
 function addButton(){
@@ -13,8 +12,6 @@ function addButton(){
         }
     }, 2000);
 }
-
-
 
 
 //download da imagem
