@@ -1,6 +1,6 @@
 'use strict'
 async function analisaNoticia(url){
-        const flaskUrl = `https://28eb-34-71-210-236.ngrok.io/${url}`
+        const flaskUrl = `http://f22a-35-238-121-243.ngrok.io/${url}`
         const dados = await fetch(flaskUrl);
         const json = await dados.json();
         var labelNoticia = document.createElement('h1');
