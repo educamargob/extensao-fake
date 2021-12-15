@@ -21,7 +21,6 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
     console.log(url);
     botaoEx.addEventListener('click', () => {
         analisaNoticia(url);
-        console.log('clicou');
     });
 });
 
