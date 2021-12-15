@@ -1,5 +1,5 @@
 //Adicionando botão ao menu
-addButton();
+/*addButton();
 function addButton(){
     setTimeout(() => {
         var menu = document.getElementsByTagName('p')[0];
@@ -11,9 +11,18 @@ function addButton(){
         }
     }, 2000);
 }
+*/
 
 
 //download da imagem
-buttonNoticia.addEventListener('click', () => {
-    analisaNoticia(url);
+var botaoEx = document.getElementById('btnExtensao');
+chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+    url = tabs[0].url;
+    console.log(url);
+    botaoEx.addEventListener('click', () => {
+        analisaNoticia(url);
+        console.log('clicou');
+    });
 });
+
+

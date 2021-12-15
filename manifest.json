@@ -2,6 +2,9 @@
     "manifest_version": 2,
     "name": "Fake News Detector",
     "version": "1.0",
+    "permissions": [
+        "tabs"
+     ],
     "description": "Análisa a probabilidade da noticia ser falsa",
     "icons": {
         "48": "icon48.png",
@@ -31,6 +34,7 @@
             "matches": [
                 "<all_urls>"
             ]
+
         }
     ]
     
