@@ -2,7 +2,7 @@
 
 async function analisaNoticia(url){
         console.log("analisando");
-        const flaskUrl = `http://9c06-34-132-53-211.ngrok.io/${url}`
+        const flaskUrl = `http://dde4-34-68-188-182.ngrok.io${url}`
         const dados = await fetch(flaskUrl);
         const json = await dados.json();
         var labelNoticia = document.createElement('img');
