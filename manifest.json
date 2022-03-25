@@ -8,7 +8,7 @@
     "description": "Análisa a probabilidade da noticia ser falsa",
     "icons": {
         "32": "news-32.png",
-        "128": "news-128.png"
+        "128": "news-32.png"
     },
     
     "background":{
@@ -17,7 +17,7 @@
     },
     "browser_action": {
         "default_icon": {
-            "19": "news-19.png",
+            "19": "news-32.png",
             "38": "news-32.png"
         },
         "default_title": "Fake news Detector",

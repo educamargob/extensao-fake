@@ -4,44 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Fake news Detector</title>
-    <style>
-        body{
-            width: 300px;
-            text-align: center;
-        }
-        h1{
-            display: inline-block;
-            
-        }
-        #title>img{
-            display: inline-block;
-            margin-bottom: -7px;
-            margin-right: 5px;
-        }
-        p{
-            margin: 5px auto 5px auto;
-            width: 117px;
-        }
-        button{
-            height: 25px;
-            text-align: center;
-            margin: 5px;
-            color: white;
-            background-color: rgb(107, 107, 107);
-            border-color: rgb(121, 121, 121);
-            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.158);
-        }
-    </style>
 
 </head>
 <body>
-
-    <div id="title"><img src="../../news-32.png" alt=""><h1>Fake news Detector</h1></div>
-    <p>
-        <button type="button" id="btnExtensao">Análisar noticia</button>
-
-    </p>    
+    <main>
+        
+        <section>
+            <div id="titulo"><img src="../../news-32.png" alt=""><h1>Fake news Detector</h1></div>
+            <h2>Como usar:</h2>
+            <p id="texto">Ao clicar no botão <strong>"Analisar notícia"</strong> o algoritimo responsável irá anlaisar a página atual e verificar todos os elementos de texto, retornando o resultado com a sua porcentagem de acuracia</p>
+            
+            <div id="botao">
+                <button type="button" id="btnExtensao">Análisar notícia</button>
+            </div>   
+        </section> 
+    </main>
     <script type="text/javascript" src="../main.js"></script>
     <script type="text/javascript" src="../services/analisaNoticia.js"></script>
 </body>
